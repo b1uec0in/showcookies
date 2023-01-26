@@ -13,7 +13,7 @@
         msgEl.innerHTML=ret
     }
     function openUrl() {
-        var url = window.location.search.get("openUrl");
+        var url = new URL(window.location).searchParams.get("openUrl");
         window.location.href = url
     }
   
