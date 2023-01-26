@@ -12,13 +12,19 @@
         var msgEl = document.getElementById("msg");
         msgEl.innerHTML=ret
     }
+    function openUrl() {
+        var url = window.location.search.get("openUrl");
+        window.location.href = url
+    }
   
     </script>
 </head>
   
 <body >
+    <button onclick="openUrl()"> openUrl() </button>
+    <button onclick="getCookies()"> getCookies() </button><br>
+    <p>mag:<p>
     <p id="msg" > </p>
-    <button onclick="getCookies()"> getCookies() </button>
 </body>
   
 </html>
